@@ -75,12 +75,12 @@
             "description": {
               "es": "Argumentos de ejecución",
               "en": "Execution arguments",
-              "pr": "Argumentos de execução"
+              "pr": "Argumentos de execucão"
             },
             "title": {
-              "es": "Asignar resultado a variable",
-              "en": "Assign result to variable",
-              "pr": "Atribuir resultado à variável"
+              "es": "Argumentos de ejecución",
+              "en": "Execution arguments",
+              "pr": "Argumentos de execucão"
             },
             "remove_vars": false,
             "id": "arguments",
@@ -163,6 +163,27 @@
             },
             "id": "file",
             "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "Argumentos",
+              "en": "Arguments",
+              "pr": "Argumentos"
+            },
+            "description": {
+              "es": "Argumentos de ejecución",
+              "en": "Execution arguments",
+              "pr": "Argumentos de execucão"
+            },
+            "title": {
+              "es": "Argumentos de ejecución",
+              "en": "Execution arguments",
+              "pr": "Argumentos de execucão"
+            },
+            "remove_vars": false,
+            "id": "arguments",
+            "css": "col-md-6"
           },
           {
             "type": "input",

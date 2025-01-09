@@ -49,17 +49,23 @@ try:
         try:
             file = GetParams("file")
             result_studio = GetParams("result")
+            args = eval(GetParams("arguments")) if GetParams("arguments") else []
+            if args and not isinstance(args, list):
+                raise Exception("Arguments must be a list")
 
             if not file.endswith(".js"):
                 raise Exception("No Node files are not supported for Node interpreter")
 
-            result = subprocess.run(['node', file], check=False, capture_output=True, text=True)
+            parameters = ['node', file]
+            parameters.extend(args)
+
+            result = subprocess.run(parameters, check=False, capture_output=True, text=True)
 
             if "CommandNotFoundException" in result.stderr:
                 raise Exception("Node not found locally, please install it following this link:\nhttps://nodejs.org/")
 
             if result.returncode != 0:
-                raise result.stderr
+                raise Exception(result.stderr)
             
             SetVar(result_studio, result.stdout)
 
