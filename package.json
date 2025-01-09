@@ -1,0 +1,283 @@
+{
+  "author": "Pedro Herrera",
+  "description": "This module allows you to work with a local Python version and a local Node version",
+  "description_lang": {
+    "en": "This module allows you to work with a local Python version and a local Node version",
+    "es": "Este módulo te permite trabajar con una versión local de Python y una versión local de Node",
+    "pr": "Este módulo permite que você trabalhe com uma versão local do Python e uma versão local do Node."
+  },
+  "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "http://rocketbot.com",
+  "linux": true,
+  "windows": true,
+  "mac": true,
+  "docker": true,
+  "name": "ScriptsAdvanced",
+  "dependencies": {},
+  "title": {
+    "en": "ScriptsAdvanced",
+    "es": "ScriptsAdvanced",
+    "pr": "ScriptsAdvanced"
+  },
+  "icon": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBhJREFUeJzt21uoVFUYB/CfeizSrIxISZJBoguIBGFXCjRfOiAU9Wg3giIipHzowQhfDKHoAj0FGoRCT0UUYZB0oYJSSoNISuwhKwsvXSwtO2d6WGuzt9M4s/ecmbXnxPxhs4e1v/X9v/WfNWutvb41jDBCv9HAXjQTXz/hOcwdeAs7oIED0je+eH2GMwfczrZo4NtCIFcl5B7Dzfg5cq9PyI3/Nj61ABkekfeCUpjZB9IG3o339+LnurAv3heUrTBVARZjh9D4D7Aax6boMymmIsBi4dtegvcxbpo1nt4FKDb+bdyCP/oVVEr0IkCx8dtxK473M6iUqCpAQ+juS/CG0PgTLTbnxPvJKUU2hGjIp7rXcEYbmxvxF/5Uz4pstRDf92UrjFVw/qIgAqEHfNzy/CxcLvSqJ0zTMaETdum+DP0HT6ombD8x0B6Q4QEcbVP+O3bjYA8+a0MvAryJH/odSF3ox1J4WmMkQN0B1I2RAHUHUDdGAtQdQN0YCVB3AHVjJEDdAbRgHPelJKzrra0dLsCrmI2twr7CwDFMPeBOIaOzQ6LGM1wC3BPvm1OSDosA12AZjuD1lMQpBFiAeV1ssoFvm3yTdSEuGlRQvSDbEisb1Pl4Qdgd7pSrm4tfo+8rY9ksIdF5HBtxdknOyltiVVBWgDE8hMPyvcKXOtjfG212tZRvLtQ/gDWY0YW7dgFWYI888L3C3N4JH0bbB9s8W4kvCv524voOvmoT4GK8LA/0CB7TPndQxGWYFLr6/NPYjOF+ee5/MnItbGObXIA52CA0oImJGNyFJX0+FettLWE7H88LY0pTSMRucOppkKQC3OHU4zDvYGkFf2P4MdZdUaHe0siV8X6NVfFZMgHmCN92FsS6HvzdFuvu19t0vK7AfziWJe0BG/F3LDshZITKTleE/EITj1eMYx42Rc6mkIJbG58lHwMulTckI75L9+lqkZBGmxDS7WUwI/rOfjZNIUPdKNjUNguswpeFwD7FtR18rY92b5XkvlpIxmb+P8dNbexqXQfMFrriL06drloPLM3AN9Hm9i6ci6KPSflvfa2wUmyH2hdChPl5i3yQPIq7C89XxvJDOh9ofFT4fTeFseZZnNeFeygEyLBc3m33F8q3xbJnutQ/FO2244qSnEMlAKG7jwsHJ+Bc+be6rEvd5aqtD0h0PqAKWge6NcIa4hNhjd8JOwcVVBGpN0Sy9/4tiXlPi5QCzBZefo7hlYS8HZFyV/gkboicvyXk7YjU2+K7E/N1xbBsitaGkQB1B1A3RgLUHUDd+L8JMFG1QhUBsuOxl1QlSYjsqP6RQTh/WFjb7xFeZLrt+qTETFwnP86/aRAks/CR+v4QWfb6yulzDFPGPDyN74agoa3XQeGvs90SsSOMUMC/nz6kN9mGsdwAAAAASUVORK5CYII=",
+  "children": [
+    {
+      "en": {
+        "title": "Execute Python",
+        "description": "Execute python by providing a file route you want",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Ejecuta Python",
+        "description": "Ejecuta python proporcionando una ruta de archivo que desees",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Executa Python",
+        "description": "Executa python com uma rota de arquivo que você deseja",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "file_select",
+            "placeholder": {
+              "es": "Selecciona un script",
+              "en": "Select a script",
+              "pr": "Selecione um script"
+            },
+            "description": {
+              "es": "Script que se utilizará para ejecutar python",
+              "en": "Script that will be used to execute python",
+              "pr": "Script que será usado como prompt para executar python"
+            },
+            "title": {
+              "es": "Python Script",
+              "en": "Python Script",
+              "pr": "Python Script"
+            },
+            "id": "file",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "Argumentos",
+              "en": "Arguments",
+              "pr": "Argumentos"
+            },
+            "description": {
+              "es": "Argumentos de ejecución",
+              "en": "Execution arguments",
+              "pr": "Argumentos de execução"
+            },
+            "title": {
+              "es": "Asignar resultado a variable",
+              "en": "Assign result to variable",
+              "pr": "Atribuir resultado à variável"
+            },
+            "remove_vars": false,
+            "id": "arguments",
+            "css": "col-md-6"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "result",
+              "en": "result",
+              "pr": "result"
+            },
+            "description": {
+              "es": "Variable donde se almacenará el resultado de la ejecución",
+              "en": "Variable where the execution result will be stored",
+              "pr": "Variável onde o resultado da execução será armazenado"
+            },
+            "title": {
+              "es": "Asignar resultado a variable",
+              "en": "Assign result to variable",
+              "pr": "Atribuir resultado à variável"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBhJREFUeJzt21uoVFUYB/CfeizSrIxISZJBoguIBGFXCjRfOiAU9Wg3giIipHzowQhfDKHoAj0FGoRCT0UUYZB0oYJSSoNISuwhKwsvXSwtO2d6WGuzt9M4s/ecmbXnxPxhs4e1v/X9v/WfNWutvb41jDBCv9HAXjQTXz/hOcwdeAs7oIED0je+eH2GMwfczrZo4NtCIFcl5B7Dzfg5cq9PyI3/Nj61ABkekfeCUpjZB9IG3o339+LnurAv3heUrTBVARZjh9D4D7Aax6boMymmIsBi4dtegvcxbpo1nt4FKDb+bdyCP/oVVEr0IkCx8dtxK473M6iUqCpAQ+juS/CG0PgTLTbnxPvJKUU2hGjIp7rXcEYbmxvxF/5Uz4pstRDf92UrjFVw/qIgAqEHfNzy/CxcLvSqJ0zTMaETdum+DP0HT6ombD8x0B6Q4QEcbVP+O3bjYA8+a0MvAryJH/odSF3ox1J4WmMkQN0B1I2RAHUHUDdGAtQdQN0YCVB3AHVjJEDdAbRgHPelJKzrra0dLsCrmI2twr7CwDFMPeBOIaOzQ6LGM1wC3BPvm1OSDosA12AZjuD1lMQpBFiAeV1ssoFvm3yTdSEuGlRQvSDbEisb1Pl4Qdgd7pSrm4tfo+8rY9ksIdF5HBtxdknOyltiVVBWgDE8hMPyvcKXOtjfG212tZRvLtQ/gDWY0YW7dgFWYI888L3C3N4JH0bbB9s8W4kvCv524voOvmoT4GK8LA/0CB7TPndQxGWYFLr6/NPYjOF+ee5/MnItbGObXIA52CA0oImJGNyFJX0+FettLWE7H88LY0pTSMRucOppkKQC3OHU4zDvYGkFf2P4MdZdUaHe0siV8X6NVfFZMgHmCN92FsS6HvzdFuvu19t0vK7AfziWJe0BG/F3LDshZITKTleE/EITj1eMYx42Rc6mkIJbG58lHwMulTckI75L9+lqkZBGmxDS7WUwI/rOfjZNIUPdKNjUNguswpeFwD7FtR18rY92b5XkvlpIxmb+P8dNbexqXQfMFrriL06drloPLM3AN9Hm9i6ci6KPSflvfa2wUmyH2hdChPl5i3yQPIq7C89XxvJDOh9ofFT4fTeFseZZnNeFeygEyLBc3m33F8q3xbJnutQ/FO2244qSnEMlAKG7jwsHJ+Bc+be6rEvd5aqtD0h0PqAKWge6NcIa4hNhjd8JOwcVVBGpN0Sy9/4tiXlPi5QCzBZefo7hlYS8HZFyV/gkboicvyXk7YjU2+K7E/N1xbBsitaGkQB1B1A3RgLUHUDd+L8JMFG1QhUBsuOxl1QlSYjsqP6RQTh/WFjb7xFeZLrt+qTETFwnP86/aRAks/CR+v4QWfb6yulzDFPGPDyN74agoa3XQeGvs90SsSOMUMC/nz6kN9mGsdwAAAAASUVORK5CYII=",
+      "module": "python",
+      "module_name": "ScriptsAdvanced",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": true
+    },
+    {
+      "en": {
+        "title": "Execute Node",
+        "description": "Execute Node by providing a file route you want",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Ejecuta Node",
+        "description": "Ejecuta Node proporcionando una ruta de archivo que desees",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Executa Node",
+        "description": "Executa Node com uma rota de arquivo que você deseja",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "file_select",
+            "placeholder": {
+              "es": "Selecciona un script",
+              "en": "Select a script",
+              "pr": "Selecione um arquivo"
+            },
+            "description": {
+              "es": "Script que se utilizará para ejecutar Node",
+              "en": "Script that will be used to execute Node",
+              "pr": "Script que será usado como prompt para executar Node"
+            },
+            "title": {
+              "es": "Script",
+              "en": "Script",
+              "pr": "Script"
+            },
+            "id": "file",
+            "css": "col-md-12"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "result",
+              "en": "result",
+              "pr": "result"
+            },
+            "description": {
+              "es": "Variable donde se almacenará el resultado de la ejecución",
+              "en": "Variable where the execution result will be stored",
+              "pr": "Variável onde o resultado da execução será armazenado"
+            },
+            "title": {
+              "es": "Asignar resultado a variable",
+              "en": "Assign result to variable",
+              "pr": "Atribuir resultado à variável"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBhJREFUeJzt21uoVFUYB/CfeizSrIxISZJBoguIBGFXCjRfOiAU9Wg3giIipHzowQhfDKHoAj0FGoRCT0UUYZB0oYJSSoNISuwhKwsvXSwtO2d6WGuzt9M4s/ecmbXnxPxhs4e1v/X9v/WfNWutvb41jDBCv9HAXjQTXz/hOcwdeAs7oIED0je+eH2GMwfczrZo4NtCIFcl5B7Dzfg5cq9PyI3/Nj61ABkekfeCUpjZB9IG3o339+LnurAv3heUrTBVARZjh9D4D7Aax6boMymmIsBi4dtegvcxbpo1nt4FKDb+bdyCP/oVVEr0IkCx8dtxK473M6iUqCpAQ+juS/CG0PgTLTbnxPvJKUU2hGjIp7rXcEYbmxvxF/5Uz4pstRDf92UrjFVw/qIgAqEHfNzy/CxcLvSqJ0zTMaETdum+DP0HT6ombD8x0B6Q4QEcbVP+O3bjYA8+a0MvAryJH/odSF3ox1J4WmMkQN0B1I2RAHUHUDdGAtQdQN0YCVB3AHVjJEDdAbRgHPelJKzrra0dLsCrmI2twr7CwDFMPeBOIaOzQ6LGM1wC3BPvm1OSDosA12AZjuD1lMQpBFiAeV1ssoFvm3yTdSEuGlRQvSDbEisb1Pl4Qdgd7pSrm4tfo+8rY9ksIdF5HBtxdknOyltiVVBWgDE8hMPyvcKXOtjfG212tZRvLtQ/gDWY0YW7dgFWYI888L3C3N4JH0bbB9s8W4kvCv524voOvmoT4GK8LA/0CB7TPndQxGWYFLr6/NPYjOF+ee5/MnItbGObXIA52CA0oImJGNyFJX0+FettLWE7H88LY0pTSMRucOppkKQC3OHU4zDvYGkFf2P4MdZdUaHe0siV8X6NVfFZMgHmCN92FsS6HvzdFuvu19t0vK7AfziWJe0BG/F3LDshZITKTleE/EITj1eMYx42Rc6mkIJbG58lHwMulTckI75L9+lqkZBGmxDS7WUwI/rOfjZNIUPdKNjUNguswpeFwD7FtR18rY92b5XkvlpIxmb+P8dNbexqXQfMFrriL06drloPLM3AN9Hm9i6ci6KPSflvfa2wUmyH2hdChPl5i3yQPIq7C89XxvJDOh9ofFT4fTeFseZZnNeFeygEyLBc3m33F8q3xbJnutQ/FO2244qSnEMlAKG7jwsHJ+Bc+be6rEvd5aqtD0h0PqAKWge6NcIa4hNhjd8JOwcVVBGpN0Sy9/4tiXlPi5QCzBZefo7hlYS8HZFyV/gkboicvyXk7YjU2+K7E/N1xbBsitaGkQB1B1A3RgLUHUDd+L8JMFG1QhUBsuOxl1QlSYjsqP6RQTh/WFjb7xFeZLrt+qTETFwnP86/aRAks/CR+v4QWfb6yulzDFPGPDyN74agoa3XQeGvs90SsSOMUMC/nz6kN9mGsdwAAAAASUVORK5CYII=",
+      "module": "node",
+      "module_name": "ScriptsAdvanced",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": true
+    },
+    {
+      "en": {
+        "title": "Execute Command Line",
+        "description": "Generate content by providing a command line input",
+        "title_options": null,
+        "options": null
+      },
+      "es": {
+        "title": "Ejecutar Línea de Comando",
+        "description": "Genera contenido proporcionando una entrada de línea de comando",
+        "title_options": null,
+        "options": null
+      },
+      "pr": {
+        "title": "Executar Linha de Comando",
+        "description": "Gere conteúdo fornecendo uma entrada de linha de comando",
+        "title_options": null,
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "textarea",
+            "placeholder": {
+              "es": "¿Qué comandos ejecutarás en la línea de comando?",
+              "en": "What commands will you execute in the command line?",
+              "pr": "Quais comandos você executará na linha de comando?"
+            },
+            "description": {
+              "es": "Texto que se utilizará como prompt para generar el contenido",
+              "en": "Text that will be used as a prompt to generate the content",
+              "pr": "Texto que será usado como prompt para gerar o conteúdo"
+            },
+            "title": {
+              "es": "Instrucciones",
+              "en": "Instructions",
+              "pr": "Instruções"
+            },
+            "id": "instructions",
+            "css": "col-md-12",
+            "formatter": "bash"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "result",
+              "en": "result",
+              "pr": "result"
+            },
+            "description": {
+              "es": "Variable donde se almacenará el resultado de la ejecución",
+              "en": "Variable where the execution result will be stored",
+              "pr": "Variável onde o resultado da execução será armazenado"
+            },
+            "title": {
+              "es": "Asignar resultado a variable",
+              "en": "Assign result to variable",
+              "pr": "Atribuir resultado à variável"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBhJREFUeJzt21uoVFUYB/CfeizSrIxISZJBoguIBGFXCjRfOiAU9Wg3giIipHzowQhfDKHoAj0FGoRCT0UUYZB0oYJSSoNISuwhKwsvXSwtO2d6WGuzt9M4s/ecmbXnxPxhs4e1v/X9v/WfNWutvb41jDBCv9HAXjQTXz/hOcwdeAs7oIED0je+eH2GMwfczrZo4NtCIFcl5B7Dzfg5cq9PyI3/Nj61ABkekfeCUpjZB9IG3o339+LnurAv3heUrTBVARZjh9D4D7Aax6boMymmIsBi4dtegvcxbpo1nt4FKDb+bdyCP/oVVEr0IkCx8dtxK473M6iUqCpAQ+juS/CG0PgTLTbnxPvJKUU2hGjIp7rXcEYbmxvxF/5Uz4pstRDf92UrjFVw/qIgAqEHfNzy/CxcLvSqJ0zTMaETdum+DP0HT6ombD8x0B6Q4QEcbVP+O3bjYA8+a0MvAryJH/odSF3ox1J4WmMkQN0B1I2RAHUHUDdGAtQdQN0YCVB3AHVjJEDdAbRgHPelJKzrra0dLsCrmI2twr7CwDFMPeBOIaOzQ6LGM1wC3BPvm1OSDosA12AZjuD1lMQpBFiAeV1ssoFvm3yTdSEuGlRQvSDbEisb1Pl4Qdgd7pSrm4tfo+8rY9ksIdF5HBtxdknOyltiVVBWgDE8hMPyvcKXOtjfG212tZRvLtQ/gDWY0YW7dgFWYI888L3C3N4JH0bbB9s8W4kvCv524voOvmoT4GK8LA/0CB7TPndQxGWYFLr6/NPYjOF+ee5/MnItbGObXIA52CA0oImJGNyFJX0+FettLWE7H88LY0pTSMRucOppkKQC3OHU4zDvYGkFf2P4MdZdUaHe0siV8X6NVfFZMgHmCN92FsS6HvzdFuvu19t0vK7AfziWJe0BG/F3LDshZITKTleE/EITj1eMYx42Rc6mkIJbG58lHwMulTckI75L9+lqkZBGmxDS7WUwI/rOfjZNIUPdKNjUNguswpeFwD7FtR18rY92b5XkvlpIxmb+P8dNbexqXQfMFrriL06drloPLM3AN9Hm9i6ci6KPSflvfa2wUmyH2hdChPl5i3yQPIq7C89XxvJDOh9ofFT4fTeFseZZnNeFeygEyLBc3m33F8q3xbJnutQ/FO2244qSnEMlAKG7jwsHJ+Bc+be6rEvd5aqtD0h0PqAKWge6NcIa4hNhjd8JOwcVVBGpN0Sy9/4tiXlPi5QCzBZefo7hlYS8HZFyV/gkboicvyXk7YjU2+K7E/N1xbBsitaGkQB1B1A3RgLUHUDd+L8JMFG1QhUBsuOxl1QlSYjsqP6RQTh/WFjb7xFeZLrt+qTETFwnP86/aRAks/CR+v4QWfb6yulzDFPGPDyN74agoa3XQeGvs90SsSOMUMC/nz6kN9mGsdwAAAAASUVORK5CYII=",
+      "module": "cli",
+      "module_name": "ScriptsAdvanced",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": true
+    }
+  ]
+}
