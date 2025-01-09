@@ -20,15 +20,16 @@ try:
         try:
             file = GetParams("file")
             result_studio = GetParams("result")
-            args = list(GetParams("arguments"))
-            print(args, type(args))
+            args = eval(GetParams("arguments")) if GetParams("arguments") else []
+
+            if args and not isinstance(args, list):
+                raise Exception("Arguments must be a list")
 
             if not file.endswith(".py"):
-                raise Exception("No python files are not supported for python interpreter")
+                raise Exception("Only Python files are supported.")
 
             parameters = ['python', file]
             parameters.extend(args)
-            print(parameters)
 
             result = subprocess.run(parameters, check=False, capture_output=True, text=True)
             
