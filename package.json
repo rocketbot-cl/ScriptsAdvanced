@@ -1,10 +1,10 @@
 {
   "author": "Pedro Herrera",
-  "description": "This module allows you to work with a local Python version and a local Node version",
+  "description": "This module allows you to work with a local Python version and a local Node.js version",
   "description_lang": {
-    "en": "This module allows you to work with a local Python version and a local Node version",
-    "es": "Este módulo te permite trabajar con una versión local de Python y una versión local de Node",
-    "pr": "Este módulo permite que você trabalhe com uma versão local do Python e uma versão local do Node."
+    "en": "This module allows you to work with a local Python version and a local Node.js version",
+    "es": "Este módulo te permite trabajar con una versión local de Python y una versión local de Node.js",
+    "pr": "Este módulo permite que você trabalhe com uma versão local do Python e uma versão local do Node.js."
   },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
   "version": "1.0.0",
@@ -124,20 +124,20 @@
     },
     {
       "en": {
-        "title": "Execute Node",
-        "description": "Execute Node by providing a file route you want",
+        "title": "Execute Node.js",
+        "description": "Execute Node.js by providing a file route you want",
         "title_options": null,
         "options": null
       },
       "es": {
-        "title": "Ejecuta Node",
-        "description": "Ejecuta Node proporcionando una ruta de archivo que desees",
+        "title": "Ejecuta Node.js",
+        "description": "Ejecuta Node.js proporcionando una ruta de archivo que desees",
         "title_options": null,
         "options": null
       },
       "pr": {
-        "title": "Executa Node",
-        "description": "Executa Node com uma rota de arquivo que você deseja",
+        "title": "Executa Node.js",
+        "description": "Executa Node.js com uma rota de arquivo que você deseja",
         "title_options": null,
         "options": null
       },
@@ -152,9 +152,9 @@
               "pr": "Selecione um arquivo"
             },
             "description": {
-              "es": "Script que se utilizará para ejecutar Node",
-              "en": "Script that will be used to execute Node",
-              "pr": "Script que será usado como prompt para executar Node"
+              "es": "Script que se utilizará para ejecutar Node.js",
+              "en": "Script that will be used to execute Node.js",
+              "pr": "Script que será usado como prompt para executar Node.js"
             },
             "title": {
               "es": "Script",
@@ -223,7 +223,7 @@
     },
     {
       "en": {
-        "title": "Execute Command Line",
+        "title": "Execute Command Line Input",
         "description": "Generate content by providing a command line input",
         "title_options": null,
         "options": null
