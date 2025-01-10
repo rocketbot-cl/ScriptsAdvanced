@@ -1,6 +1,10 @@
+
+
+
+
 # ScriptsAdvanced
   
-Module to execute Python and Node.js scripts as well as CLI commands with the local environment
+This module allows you to work with a local Python version and a local Node.js version  
 
 *Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
 
@@ -14,14 +18,17 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 ## Overview
 
 
-1. Execute Python 
-Executes Python in the local machine with the local environment
+1. Execute Python  
+Execute python by providing a file route you want
 
-2. Execute Node.js
-Executes Node.js in the local machine with the local environment
+2. Execute Node.js  
+Execute Node.js by providing a file route you want
 
-3. Execute Command Line Input
-Executes commands of CLI in the local machine
+3. Execute Command Line Input  
+Generate content by providing a command line input  
+
+
+
 
 ----
 ### OS
@@ -35,5 +42,5 @@ Executes commands of CLI in the local machine
 
 ### License
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+![MIT](https://img.shields.io/github/license/instaloader/instaloader.svg)  
+[MIT](https://opensource.org/license/mit)
