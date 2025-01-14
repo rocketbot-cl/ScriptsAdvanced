@@ -7,7 +7,7 @@
     "pr": "Este módulo permite que você trabalhe com uma versão local do Python e uma versão local do Node.js."
   },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "http://rocketbot.com",
   "linux": true,
@@ -94,9 +94,9 @@
               "pr": "result"
             },
             "description": {
-              "es": "Variable donde se almacenará el resultado de la ejecución",
-              "en": "Variable where the execution result will be stored",
-              "pr": "Variável onde o resultado da execução será armazenado"
+              "es": "Variable donde se almacenará el resultado de la ejecución, serán los prints hechos en el script",
+              "en": "Variable where the execution result will be stored will be the prints made in the script",
+              "pr": "Variável onde o resultado da execução será armazenado serão os prints feitos no script"
             },
             "title": {
               "es": "Asignar resultado a variable",
@@ -193,9 +193,9 @@
               "pr": "result"
             },
             "description": {
-              "es": "Variable donde se almacenará el resultado de la ejecución",
-              "en": "Variable where the execution result will be stored",
-              "pr": "Variável onde o resultado da execução será armazenado"
+              "es": "Variable donde se almacenará el resultado de la ejecución, serán los prints hechos en el script",
+              "en": "Variable where the execution result will be stored, will be the prints made in the script",
+              "pr": "Variável onde o resultado da execução será armazenado serão os prints feitos no script"
             },
             "title": {
               "es": "Asignar resultado a variable",

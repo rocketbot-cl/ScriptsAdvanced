@@ -8,7 +8,7 @@ Este módulo te permite trabajar con una versión local de Python y una versión
 
 *Read this in other languages: [English](Manual_ScriptsAdvanced.md), [Português](Manual_ScriptsAdvanced.pr.md), [Español](Manual_ScriptsAdvanced.es.md)*
   
-![banner](imgs/Banner_ScriptsAdvanced.png o jpg)
+![banner](imgs/Banner_ScriptsAdvanced.jpg)
 ## Como instalar este módulo
   
 Para instalar el módulo en Rocketbot Studio, se puede hacer de dos formas:
@@ -25,7 +25,7 @@ Ejecuta python proporcionando una ruta de archivo que desees
 | --- | --- | --- |
 |Python Script|Script que se utilizará para ejecutar python|Selecciona un script|
 |Argumentos de ejecución|Argumentos de ejecución|Argumentos|
-|Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución|result|
+|Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución, serán los prints hechos en el script|result|
 
 ### Ejecuta Node.js
   
@@ -34,7 +34,7 @@ Ejecuta Node.js proporcionando una ruta de archivo que desees
 | --- | --- | --- |
 |Script|Script que se utilizará para ejecutar Node.js|Selecciona un script|
 |Argumentos de ejecución|Argumentos de ejecución|Argumentos|
-|Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución|result|
+|Asignar resultado a variable|Variable donde se almacenará el resultado de la ejecución, serán los prints hechos en el script|result|
 
 ### Ejecutar Línea de Comando
   

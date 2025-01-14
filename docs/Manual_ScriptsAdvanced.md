@@ -5,10 +5,8 @@
 # ScriptsAdvanced
   
 This module allows you to work with a local Python version and a local Node.js version  
-
-*Read this in other languages: [English](Manual_ScriptsAdvanced.md), [Português](Manual_ScriptsAdvanced.pr.md), [Español](Manual_ScriptsAdvanced.es.md)*
   
-![banner](imgs/Banner_ScriptsAdvanced.png o jpg)
+![banner](imgs/Banner_ScriptsAdvanced.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
@@ -25,7 +23,7 @@ Execute python by providing a file route you want
 | --- | --- | --- |
 |Python Script|Script that will be used to execute python|Select a script|
 |Execution arguments|Execution arguments|Arguments|
-|Assign result to variable|Variable where the execution result will be stored|result|
+|Assign result to variable|Variable where the execution result will be stored will be the prints made in the script|result|
 
 ### Execute Node.js
   
@@ -34,7 +32,7 @@ Execute Node.js by providing a file route you want
 | --- | --- | --- |
 |Script|Script that will be used to execute Node.js|Select a script|
 |Execution arguments|Execution arguments|Arguments|
-|Assign result to variable|Variable where the execution result will be stored|result|
+|Assign result to variable|Variable where the execution result will be stored, will be the prints made in the script|result|
 
 ### Execute Command Line Input
   
