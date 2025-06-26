@@ -1,5 +1,7 @@
 import subprocess
 import sys, os
+import platform
+from shutil import which
 
 GetParams = GetParams # type: ignore
 SetVar = SetVar # type: ignore
@@ -28,7 +30,13 @@ try:
             if not file.endswith(".py"):
                 raise Exception("Only Python files are supported.")
 
-            parameters = ['python', file]
+            python_exec = "python"
+            if platform.system() == "Darwin":
+                python_exec = "python3" if which("python3") else "python"
+            elif platform.system() == "Linux":
+                python_exec = "python3" if which("python3") else "python"
+
+            parameters = [python_exec, file]
             parameters.extend(args)
 
             result = subprocess.run(parameters, check=False, capture_output=True, text=True)
