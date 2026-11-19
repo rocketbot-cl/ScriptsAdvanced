@@ -7,7 +7,7 @@
     "pr": "Este módulo permite que você trabalhe com uma versão local do Python e uma versão local do Node.js."
   },
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "homepage": "http://rocketbot.com",
   "linux": true,
@@ -172,9 +172,9 @@
               "pr": "Argumentos"
             },
             "description": {
-              "es": "Argumentos de ejecución",
-              "en": "Execution arguments",
-              "pr": "Argumentos de execucão"
+              "es": "Usá una lista de textos, por ejemplo: [\"Juan\", \"3\"]. Sin argumentos, dejá vacío o usá [].",
+              "en": "Use a list of strings, for example: [\"Juan\", \"3\"]. For no arguments, leave empty or use [].",
+              "pr": "Use uma lista de textos, por exemplo: [\"Juan\", \"3\"]. Sem argumentos, deixe vazio ou use []."
             },
             "title": {
               "es": "Argumentos de ejecución",
@@ -263,6 +263,26 @@
             "id": "instructions",
             "css": "col-md-12",
             "formatter": "bash"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "60",
+              "en": "60",
+              "pr": "60"
+            },
+            "description": {
+              "es": "Tiempo máximo por comando en segundos. Si se deja vacío, se utilizan 60 segundos. Debe ser mayor que cero.",
+              "en": "Maximum time per command in seconds. Defaults to 60 seconds when empty. Must be greater than zero.",
+              "pr": "Tempo máximo por comando em segundos. Se vazio, usa 60 segundos. Deve ser maior que zero."
+            },
+            "title": {
+              "es": "Tiempo máximo (segundos)",
+              "en": "Timeout (seconds)",
+              "pr": "Tempo máximo (segundos)"
+            },
+            "id": "timeout",
+            "css": "col-md-6"
           },
           {
             "type": "input",

@@ -1,6 +1,8 @@
 import subprocess
 import sys, os
 import platform
+import math
+import signal
 from shutil import which
 
 GetParams = GetParams # type: ignore
@@ -88,14 +90,47 @@ try:
         errors = []
 
         try:
+            timeout_value = GetParams("timeout")
+            try:
+                timeout = float(timeout_value) if timeout_value is not None and str(timeout_value).strip() else 60.0
+            except (TypeError, ValueError):
+                raise ValueError("Command timeout must be a positive number of seconds.")
+            if not math.isfinite(timeout) or timeout <= 0:
+                raise ValueError("Command timeout must be a positive number of seconds.")
+
             for instruction in instructions:
 
-                result = subprocess.run(instruction, shell=True, capture_output=True, text=True)
+                # Isolate the shell so its child commands can also be stopped.
+                process_options = {}
+                if os.name == "nt":
+                    process_options["creationflags"] = subprocess.CREATE_NEW_PROCESS_GROUP
+                else:
+                    process_options["start_new_session"] = True
+                with subprocess.Popen(instruction, shell=True, stdout=subprocess.PIPE,
+                                      stderr=subprocess.PIPE, text=True, **process_options) as process:
+                    try:
+                        stdout, stderr = process.communicate(timeout=timeout)
+                    except subprocess.TimeoutExpired:
+                        if os.name == "nt":
+                            subprocess.run(["taskkill", "/PID", str(process.pid), "/T", "/F"],
+                                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                                           check=False, timeout=10)
+                        else:
+                            try:
+                                os.killpg(process.pid, signal.SIGKILL)
+                            except ProcessLookupError:
+                                pass
+                        process.kill()
+                        stdout, stderr = process.communicate()
+                        output.append(stdout)
+                        SetVar(result_studio, [item.strip() for item in output])
+                        raise TimeoutError(
+                            "Command exceeded the timeout of {:g} seconds: {}".format(timeout, instruction))
 
-                if result.returncode != 0:
-                    errors.append(result.stderr.strip())
+                if process.returncode != 0:
+                    errors.append(stderr.strip())
                 
-                output.append(result.stdout)
+                output.append(stdout)
             if errors:
                 raise Exception('\n'.join(errors))
 
